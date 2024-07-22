@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap');
+
+* {
+  font-family: 'Cairo', sans-serif !important;
+  word-wrap: normal;
+}
+
+
+.border{
+  border: 2px solid red;
+}
+:root {
+  --primary-color: #0055a3;
+  --error-color: #c62828;
+}
+
+.link-style {
+  color: var(--primary-color);
+  text-decoration: none;
+  font-size: 14px;
+  font-weight:600 ;
+  margin: 30px 10px 20px 25px;
+}
+
+.link-style:hover {
+  text-decoration: underline;
+  text-decoration-color: red;
+  text-underline-offset: 10px; /* تحديد الابعاد */
+  text-decoration-thickness: 3px; /* تحديد سمك الخط */
+}
+.link-style.active {
+  text-decoration: underline; /* إضافة الخط تحت الروابط النشطة */
+  text-decoration-color: red;
+  text-underline-offset: 10px; /* تحديد الابعاد */
+  text-decoration-thickness: 3px;  
+}
+
+.search-icon {
+   position: absolute;
+   right: 10px;
+   top: 50%;
+   transform: translateY(-50%);
+   cursor: pointer;
+ }
+.icons{
+  color: var(--primary-color);
+}
+
+.search-input{
+  height: 10px !important;
+  border-radius: 50px !important;
+}
+.subLink-style {
+  color: var(--primary-color); /* تغيير لون النص إلى اللون الرئيسي */
+  text-decoration: none; /* إزالة تزيين النصوص */
+  padding: 8px 16px; /* تعديل التباعد داخل الروابط */
+}
+
+.subLink-style:hover {
+  background-color: rgba(0, 0, 0, 0.04); /* تغيير لون الخلفية عند التحويم */
+  border-radius: 4px; /* إضافة شكل مستدير للروابط عند التحويم */
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.swiper-slide:hover{
+  cursor: grab;
+}
+.swiper-slide:active{
+  cursor: grabbing;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  
+}
+
+@media(max-width: 600px){
+  .swiper-slide img{
+    display: none;
+  }
+}
+
+html {scroll-behavior: smooth;}
+
+
+@media print {
+  .pdf-hidden {
+    display: block !important;
+  }
+}
